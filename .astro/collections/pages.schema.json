@@ -1,0 +1,149 @@
+{
+  "$ref": "#/definitions/pages",
+  "definitions": {
+    "pages": {
+      "type": "object",
+      "properties": {
+        "hero": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "subtitle": {
+              "type": "string"
+            },
+            "menuBtnText": {
+              "type": "string"
+            },
+            "menuBtnLink": {
+              "type": "string"
+            },
+            "whatsappBtnText": {
+              "type": "string"
+            },
+            "whatsappNumber": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "subtitle",
+            "menuBtnText",
+            "menuBtnLink",
+            "whatsappBtnText",
+            "whatsappNumber"
+          ],
+          "additionalProperties": false
+        },
+        "bestSellers": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "image": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "image"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "title",
+            "items"
+          ],
+          "additionalProperties": false
+        },
+        "locations": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "subtitle": {
+              "type": "string"
+            },
+            "branches": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "mapsLink": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "name",
+                  "address",
+                  "phone",
+                  "mapsLink"
+                ],
+                "additionalProperties": false
+              }
+            }
+          },
+          "required": [
+            "title",
+            "subtitle",
+            "branches"
+          ],
+          "additionalProperties": false
+        },
+        "orderBanner": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "btnText": {
+              "type": "string"
+            },
+            "whatsappNumber": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "title",
+            "btnText",
+            "whatsappNumber"
+          ],
+          "additionalProperties": false
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "hero",
+        "bestSellers",
+        "locations",
+        "orderBanner"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

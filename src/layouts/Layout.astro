@@ -1,0 +1,24 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title = "Bas Shawarma | شاورما لبنانية عالفحم" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.webp" />
+    <title>{title}</title>
+    <!-- Cairo Google Font for authentic Arabic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#121010] text-white font-['Cairo',sans-serif] antialiased overflow-x-hidden selection:bg-[#E55347] selection:text-white">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,25 @@
+---
+import { getEntry } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import BestSellers from '../components/BestSellers.astro';
+import Locations from '../components/Locations.astro';
+import OrderBanner from '../components/OrderBanner.astro';
+import Footer from '../components/Footer.astro';
+
+// Fetch dynamic CMS data from content collections
+const homeData = await getEntry('pages', 'home');
+const { hero, bestSellers, locations, orderBanner } = homeData.data;
+---
+
+<Layout title="Bas Shawarma | شاورما لبنانية عالفحم">
+  <Navbar />
+  <main>
+    <Hero data={hero} />
+    <BestSellers data={bestSellers} />
+    <Locations data={locations} />
+    <OrderBanner data={orderBanner} />
+  </main>
+  <Footer />
+</Layout>

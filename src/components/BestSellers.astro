@@ -1,0 +1,51 @@
+---
+interface Props {
+  data: {
+    title: string;
+    items: Array<{
+      name: string;
+      image: string;
+    }>;
+  };
+}
+
+const { data } = Astro.props;
+
+// 1. Define the type for a single item
+type Item = {
+  name: string;
+  image: string;
+};
+---
+
+<section class="py-16 px-4 md:px-12 bg-[#121010] relative">
+  <!-- Divider -->
+  <div class="relative flex py-5 items-center max-w-7xl mx-auto mb-12">
+    <div class="flex-grow border-t border-white/10"></div>
+    <span class="flex-shrink mx-4 text-gray-400">
+      <img src="/images/logo.webp" alt="Emblem" class="w-8 h-8 opacity-60" />
+    </span>
+    <div class="flex-grow border-t border-white/10"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-5xl font-black text-white text-right mb-10">
+      {data.title}
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      {/* 2. Apply the type to the map parameter here */}
+      {data.items.map((item: Item) => (
+        <div class="group relative bg-[#1c1918] rounded-lg overflow-hidden border border-white/5 shadow-2xl transition duration-300 hover:-translate-y-1">
+          <div class="aspect-[4/3] w-full overflow-hidden bg-stone-900">
+            <img 
+              src={item.image} 
+              alt={item.name} 
+              class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+            />
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+backend:
+  name: github
+  repo: Mohammad-Mahfoud/website-clone-test # Replace with your GitHub username & repository
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/content/pages/home.json"
+        label: "Home Page (الرئيسية)"
+        name: "home"
+        fields:
+          # Hero Section
+          - name: "hero"
+            label: "Hero Section (القسم الرئيسي)"
+            widget: "object"
+            fields:
+              - { label: "Main Headline", name: "title", widget: "string" }
+              - { label: "Subtitle", name: "subtitle", widget: "string" }
+              - { label: "Menu Button Text", name: "menuBtnText", widget: "string" }
+              - { label: "Menu Button Link", name: "menuBtnLink", widget: "string" }
+              - { label: "WhatsApp Button Text", name: "whatsappBtnText", widget: "string" }
+              - { label: "WhatsApp Number", name: "whatsappNumber", widget: "string" }
+
+          # Best Sellers Section
+          - name: "bestSellers"
+            label: "Best Sellers (الأكثر مبيعاً)"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - name: "items"
+                label: "Dishes List"
+                widget: "list"
+                fields:
+                  - { label: "Dish Name", name: "name", widget: "string" }
+                  - { label: "Image", name: "image", widget: "image" }
+
+          # Locations Section
+          - name: "locations"
+            label: "Locations Section (ويّنا؟)"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string" }
+              - { label: "Subtitle Link Text", name: "subtitle", widget: "string" }
+              - name: "branches"
+                label: "Branches List"
+                widget: "list"
+                fields:
+                  - { label: "Branch Name", name: "name", widget: "string" }
+                  - { label: "Address Text", name: "address", widget: "string" }
+                  - { label: "Phone Number", name: "phone", widget: "string" }
+                  - { label: "Google Maps Link", name: "mapsLink", widget: "string" }
+
+          # Order Banner
+          - name: "orderBanner"
+            label: "Order Banner (اطّلب هلق)"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "WhatsApp Button Label", name: "btnText", widget: "string" }
+              - { label: "Phone/WhatsApp Number", name: "whatsappNumber", widget: "string" }

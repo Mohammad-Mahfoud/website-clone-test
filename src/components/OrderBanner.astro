@@ -1,0 +1,31 @@
+---
+interface Props {
+  data: {
+    title: string;
+    btnText: string;
+    whatsappNumber: string;
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section class="bg-[#262322] py-10 px-6 md:px-12 border-t border-b border-white/5">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    
+    <!-- Action Button (Left side on RTL) -->
+    <a
+      href={`https://wa.me/${data.whatsappNumber}`}
+      target="_blank"
+      class="bg-[#E55347] hover:bg-[#d44337] text-white font-bold py-3 px-8 rounded text-base md:text-lg transition shadow-lg shadow-[#E55347]/20 w-full md:w-auto text-center"
+    >
+      {data.btnText}
+    </a>
+
+    <!-- Big Callout Title (Right side on RTL) -->
+    <h2 class="text-3xl md:text-5xl font-black text-white text-center md:text-right">
+      {data.title}
+    </h2>
+
+  </div>
+</section>

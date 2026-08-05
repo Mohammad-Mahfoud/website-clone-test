@@ -1,0 +1,52 @@
+---
+interface Props {
+  data: {
+    title: string;
+    subtitle: string;
+    menuBtnText: string;
+    menuBtnLink: string;
+    whatsappBtnText: string;
+    whatsappNumber: string;
+  };
+}
+
+const { data } = Astro.props;
+---
+
+<section class="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4 bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(18, 16, 16, 0.75), rgba(18, 16, 16, 0.85)), url('/images/hero-bg.webp');">
+  <div class="text-center max-w-3xl mx-auto flex flex-col items-center">
+    
+    <!-- Main Center Calligraphic Logo -->
+    <div class="w-64 md:w-96 mb-6 drop-shadow-2xl">
+      <img src="/images/logo.webp" alt="Bas Shawarma Logo" class="w-full h-auto object-contain" />
+    </div>
+
+    <!-- Main Headline -->
+    <h1 class="text-4xl md:text-6xl font-black text-white tracking-tight mb-2 leading-tight">
+      {data.title}
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-lg md:text-xl text-gray-300 font-medium mb-8">
+      {data.subtitle}
+    </p>
+
+    <!-- Action Buttons -->
+    <div class="flex items-center justify-center gap-4 w-full max-w-sm">
+      <a
+        href={data.menuBtnLink}
+        class="flex-1 py-2.5 px-6 border border-white/80 hover:border-white text-white font-bold rounded text-center transition hover:bg-white hover:text-black"
+      >
+        {data.menuBtnText}
+      </a>
+      <a
+        href={`https://wa.me/${data.whatsappNumber}`}
+        target="_blank"
+        class="flex-1 py-2.5 px-6 bg-[#E55347] hover:bg-[#d44337] text-white font-bold rounded text-center transition shadow-lg shadow-[#E55347]/30"
+      >
+        {data.whatsappBtnText}
+      </a>
+    </div>
+
+  </div>
+</section>

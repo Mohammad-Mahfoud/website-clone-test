@@ -1,0 +1,50 @@
+{
+    "hero": {
+      "title": "شاورما لبنانية عالـفحم",
+      "subtitle": "منذ ٢٠١٧",
+      "menuBtnText": "Menu",
+      "menuBtnLink": "/menu",
+      "whatsappBtnText": "اطلب عالواتساب",
+      "whatsappNumber": "96181345501"
+    },
+    "bestSellers": {
+      "title": "الأكثر مبيعاً",
+      "items": [
+        {
+          "name": "طبق شاورما عربي مشكل",
+          "image": "/images/img3.webp"
+        },
+        {
+          "name": "وجبة شاورما كريسبي مميزة",
+          "image": "/images/img2.webp"
+        },
+        {
+          "name": "صينية العائلة شاورما عالفحم",
+          "image": "/images/img1.webp"
+        }
+      ]
+    },
+    "locations": {
+      "title": "ويّنا؟",
+      "subtitle": "- كل التفاصيل",
+      "branches": [
+        {
+          "name": "كفررمان",
+          "address": "أوتوستراد كفررمان باتجاه مرجعيون",
+          "phone": "07 761 654",
+          "mapsLink": "https://maps.google.com"
+        },
+        {
+          "name": "الضاحية",
+          "address": "سانت تيريز، مقابل قهوة شيخ الجبل",
+          "phone": "81 405 431",
+          "mapsLink": "https://maps.google.com"
+        }
+      ]
+    },
+    "orderBanner": {
+      "title": "اطّلب هلق",
+      "btnText": "واتساب 81 345 501",
+      "whatsappNumber": "96181345501"
+    }
+  }
