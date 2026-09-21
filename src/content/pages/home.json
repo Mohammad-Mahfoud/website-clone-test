@@ -1,50 +1,50 @@
 {
-    "hero": {
-      "title": "شاورما لبنانية عالـفحم",
-      "subtitle": "منذ ٢٠١٧",
-      "menuBtnText": "Menu",
-      "menuBtnLink": "/menu",
-      "whatsappBtnText": "اطلب عالواتساب",
-      "whatsappNumber": "96181345501"
-    },
-    "bestSellers": {
-      "title": "الأكثر مبيعاً",
-      "items": [
-        {
-          "name": "طبق شاورما عربي مشكل",
-          "image": "/images/img3.webp"
-        },
-        {
-          "name": "وجبة شاورما كريسبي مميزة",
-          "image": "/images/img2.webp"
-        },
-        {
-          "name": "صينية العائلة شاورما عالفحم",
-          "image": "/images/img1.webp"
-        }
-      ]
-    },
-    "locations": {
-      "title": "ويّنا؟",
-      "subtitle": "- كل التفاصيل",
-      "branches": [
-        {
-          "name": "كفررمان",
-          "address": "أوتوستراد كفررمان باتجاه مرجعيون",
-          "phone": "07 761 654",
-          "mapsLink": "https://maps.google.com"
-        },
-        {
-          "name": "الضاحية",
-          "address": "سانت تيريز، مقابل قهوة شيخ الجبل",
-          "phone": "81 405 431",
-          "mapsLink": "https://maps.google.com"
-        }
-      ]
-    },
-    "orderBanner": {
-      "title": "اطّلب هلق",
-      "btnText": "واتساب 81 345 501",
-      "whatsappNumber": "96181345501"
-    }
+  "hero": {
+    "title": "أطيب شاورما على الفحم",
+    "subtitle": "طعم أصيل، مكونات طازجة يومياً، ونكهة ما بتنتسى",
+    "menuBtnText": "شاهد المنيو",
+    "menuBtnLink": "#bestsellers",
+    "whatsappBtnText": "طلب سريع عبر واتساب",
+    "whatsappNumber": "96170000000"
+  },
+  "bestSellers": {
+    "title": "الأكثر مبيعاً",
+    "items": [
+      {
+        "name": "ساندويش شاورما دجاج",
+        "image": "/uploads/chicken-shawarma.jpg"
+      },
+      {
+        "name": "ساندويش شاورما لحمة",
+        "image": "/uploads/beef-shawarma.jpg"
+      },
+      {
+        "name": "صحن شاورما مشكل",
+        "image": "/uploads/mixed-plate.jpg"
+      }
+    ]
+  },
+  "locations": {
+    "title": "ويّنا؟",
+    "subtitle": "تفضل بزيارتنا في أقرب فرع لك",
+    "branches": [
+      {
+        "name": "فرع الحمرا",
+        "address": "شارع الحمرا الرئيسي، بيروت",
+        "phone": "+961 1 123 456",
+        "mapsLink": "https://maps.google.com"
+      },
+      {
+        "name": "فرع صيدا",
+        "address": "الشارع العام، مقابل البلدية",
+        "phone": "+961 7 123 456",
+        "mapsLink": "https://maps.google.com"
+      }
+    ]
+  },
+  "orderBanner": {
+    "title": "جوعان؟ طلبك بيوصلك أينما كنت",
+    "btnText": "أطلب الآن عبر واتساب",
+    "whatsappNumber": "96170000000"
   }
+}
