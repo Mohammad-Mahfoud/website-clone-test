@@ -12,15 +12,15 @@
     "items": [
       {
         "name": "ساندويش شاورما دجاج",
-        "image": "/uploads/chicken-shawarma.jpg"
+        "image": "/uploads/chicken-shawarma.webp"
       },
       {
         "name": "ساندويش شاورما لحمة",
-        "image": "/uploads/beef-shawarma.jpg"
+        "image": "/uploads/beef-shawarma.webp"
       },
       {
         "name": "صحن شاورما مشكل",
-        "image": "/uploads/mixed-plate.jpg"
+        "image": "/uploads/mixed-plate.webp"
       }
     ]
   },
